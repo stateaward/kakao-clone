@@ -1,0 +1,67 @@
+.more .more__header {
+  display: block;
+}
+
+.more .more__btn-list,
+.more .more__suggestions-list {
+  margin: 30px 0px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+/* 둘다 동일한 형식으로 구성되어 있으니 그냥 동일하게 적용 */
+
+.more__btn-list .more__btn,
+.more .suggestion {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+/* 클래스의 단어만 있으면 모두 적용인가?? */
+
+.more .more__btn-icon {
+  font-size: 10px;
+}
+
+.more__btn .more__btn-title {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.more .more__title {
+  font-size: 12px;
+  color: #4b4b4b;
+  margin-bottom: 20px;
+}
+
+.more .more__suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+}
+
+/* .more .more__suggestion.suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+} */
+
+.suggestion .suggestion__icon {
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #fce006;
+  /* border: 1px solid #bb970a; */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestion .suggestion__title {
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.7;
+}

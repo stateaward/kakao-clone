@@ -1,0 +1,16 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  opacity: 0.7;
+  /* 투명도 혹은 color: 로 변경 */
+}
+
+/* 아이콘 크기 조정은 폰트 사이즈 */
+.status-bar i {
+  font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level {
+  margin-left: 5px;
+}

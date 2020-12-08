@@ -1,0 +1,52 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 38%;
+}
+
+/* 동시에 적용시키려면 .을 통해 붙여서 작성
+안에 있는 녀석(상속 관계)에게 적용시키려면 한 칸 띄기 */
+.friend__avatar.g-avatar {
+  width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__column .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__content .friend__name {
+  font-weight: 500;
+  display: block;
+  /* name자체는 span -> inline 성질(옆에 정렬) / 밑으로 내려보내기 위해서 block(옆에 위치X) */
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__bottom-text,
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+/* 오직 Index 안의 Chat 화면에서만 적용되기 위한 태그 */
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}

@@ -1,0 +1,49 @@
+.find {
+  margin-top: 0.5%;
+}
+
+.find .find__header {
+  display: block;
+  /* header의 모든 요소를 block 형식으로 해야지, space-around 적용.
+  flex는 BOX 형식에서만 적용되는 걸까? */
+}
+
+.find .find__header-list {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.find .find__header-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find .header-btn__title {
+  display: block;
+  /* 왜 block으로 지정? span으로 정의된 것을 block 요소로 바꾸기 위해서?*/
+}
+
+/* 왜 별도 CSS 코드 생성? */
+.find .header-btn__title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.find .header-btn__icon {
+  font-size: 12px;
+}
+
+.find .find__recommended {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.find .find__title {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  /* color: gray; */
+}
